@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login/login.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { SharedModule } from './shared/shared.module';
     CoreModule,           // Singleton objects (services, components that are loaded only once, etc.)
     SharedModule          // Shared (multi-instance) objects
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, DummyComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
